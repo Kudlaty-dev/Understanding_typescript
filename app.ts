@@ -1,40 +1,16 @@
+let userInput: unknown;
+let userName: string;
 
+userInput = 5
+userInput = 'Max'
 
-// const person: {
-//     name: string;
-//     age: number;
-//     hobbies: string[];
-//     role: [number, string]
-// } = {
-//     name: 'Piotr',
-//     age: 30,
-//     hobbies: ['Sports', 'Cooking'],
-//     role: 'admin'
-// }
-
-enum Role {ADMIN, AUTHOR, READ_ONLY};
-
-const person = {
-    name: 'Piotr',
-    age: 30,
-    hobbies: ['Sports', 'Cooking'],
-    role: Role.ADMIN
+if(typeof userInput === 'string') {
+    userName = userInput
 }
 
-//person.role.push('admin');
-//person.role[0] = 10
-
-
-let favoriteAvtivities: string[];
-favoriteAvtivities = ['Sports']
-
-console.log(person)
-
-for (const hobby of person.hobbies) {
-    console.log(hobby.toUpperCase())
+function generateError(message: string, code: number): never {
+    throw {message: message, errorCode: code}
+    // whitle (true) {}
 }
 
-
-if (person.role === Role.ADMIN) {
-    console.log('is admin')
-}
+generateError('An error occurred!', 500)
