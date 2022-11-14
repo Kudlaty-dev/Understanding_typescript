@@ -13,6 +13,7 @@ function generateError(message: string, code: number): never {
     // whitle (true) {}
 }
 
+
 generateError('An error occurred!', 500)
 
-console.log('Hello world')
+console.log('Hello world.')
