@@ -1,14 +1,14 @@
-"use strict";
-let userInput;
-let userName;
-userInput = 5;
-userInput = 'Max';
-if (typeof userInput === 'string') {
-    userName = userInput;
+function combine(input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
 }
-function generateError(message, code) {
-    throw { message: message, errorCode: code };
-    // whitle (true) {}
-}
-generateError('An error occurred!', 500);
-console.log('Hello world');
+var combinedAges = combine(30, 36);
+console.log(combinedAges);
+var combinedNames = combine('Max', 'Ana');
+console.log(combinedNames);
