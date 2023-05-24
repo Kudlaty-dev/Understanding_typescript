@@ -1,18 +1,18 @@
 "use strict";
-function addition(n1, n2) {
-    return n1 + n2;
-}
-function printResult(num) {
-    console.log("Result: " + num);
-}
-function addAndHandle(n1, n2, cb) {
-    const result = n1 + n2;
-    cb(result);
-}
-printResult(addition(5, 12));
-let combineValues;
-combineValues = addition;
-console.log(combineValues(8, 8));
-addAndHandle(10, 20, (result) => {
-    console.log(result);
-});
+// function addition(n1: number, n2: number) {
+//   return n1 + n2;
+// }
+// function printResult(num: number) {
+//   console.log("Result: " + num);
+// }
+// function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
+//   const result = n1 + n2;
+//   cb(result);
+// }
+// printResult(addition(5, 12));
+// let combineValues: (a: number, b: number) => number;
+// combineValues = addition;
+// console.log(combineValues(8, 8));
+// addAndHandle(10, 20, (result) => {
+//   console.log(result);
+// });
