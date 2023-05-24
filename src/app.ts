@@ -1,8 +1,52 @@
-const button = document.querySelector("button")!;
+const adding = (a: number, b: number = 1) => a + b;
 
-button.addEventListener("click", () => {
-  console.log("Clicked!");
-});
+console.log(adding(5));
+
+const printOutput: (a: number | string) => void = (output) =>
+  console.log(output);
+
+const button = document.querySelector("button");
+
+if (button) {
+  button.addEventListener("click", (event) => console.log(event));
+}
+
+const hobbies = ["Sports", "Cooking"];
+const activeHobbies = ["Hiking"];
+
+activeHobbies.push(...hobbies);
+
+console.log(activeHobbies);
+
+const persona = {
+  name: "Max",
+  age: 30,
+};
+
+const copiedPerson = { ...persona };
+console.log("Persona:");
+console.log(persona);
+console.log("CopiedPersona:");
+console.log(copiedPerson);
+
+const personaTwo = {
+  name: "Piotr",
+  age: 31,
+};
+
+const personaTwoCopy = { ...personaTwo };
+console.log("PersonaTwoCopy");
+console.log(personaTwoCopy);
+
+personaTwo.name = "Kudlaty";
+console.log(personaTwo);
+console.log(personaTwoCopy);
+
+// const button = document.querySelector("button")!;
+
+// button.addEventListener("click", () => {
+//   console.log("Clicked!");
+// });
 
 // let userInput: unknown;
 // let userName: string;
