@@ -1,6 +1,6 @@
 "use strict";
 var _a;
-var e1 = {
+const e1 = {
     name: "Kudlaty",
     privileges: ["create-server"],
     startDate: new Date(),
@@ -12,18 +12,18 @@ function add(a, b) {
     }
     return a + b;
 }
-var fetchedUserData = {
+const fetchedUserData = {
     id: "u1",
     name: "Kudlaty",
     job: { title: "CEO", dsescription: "My own company" },
 };
 //Optional chaining property - with '?' it only tries to access inside if the property exists.
 console.log((_a = fetchedUserData === null || fetchedUserData === void 0 ? void 0 : fetchedUserData.job) === null || _a === void 0 ? void 0 : _a.title);
-var result = add("Max", "Kudlaty");
+const result = add("Max", "Kudlaty");
 console.log(result);
 // Nullish coalescing
-var userInput = undefined;
-var storedData = userInput !== null && userInput !== void 0 ? userInput : "DEFAULT";
+const userInput = undefined;
+const storedData = userInput !== null && userInput !== void 0 ? userInput : "DEFAULT";
 console.log(storedData);
 // type UnknownEmployee = Employee | Admin;
 // function printEmployeeInformation(emp: UnknownEmployee) {
